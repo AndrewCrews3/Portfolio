@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Navbar-Font;
+    src: url("/Users/andrewcrews/Desktop/Portfolio Website/Fonts/MADECarvingSoftOutlinePERSONALUSE-Bold.otf") format("opentype");
+}
+
+
+* { 
+    padding: 0; margin: 0;
+   /* outline: 1px solid red !important; */
+}
+
+body {
+    background-color: rgb(16, 16, 16);
+}
+
+.navbar-container {
+    display: flex;
+    position: fixed;
+    float: right;
+    height: 3.4rem;
+    z-index: 10;
+    left: auto; 
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: rgb(16, 16, 16);
+    border-bottom-color: rgba(23, 23, 23,0.2);
+    
+    border-style: solid;
+    
+}
+
+.navbar-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: Navbar-Font, sans-serif;
+    font-size: 0.55rem;
+    color: #FFFFFFFF;
+    width: 33%;
+    margin-right: 2rem;
+    
+}
+
+.navbar-items h2{
+    padding: 1ch;
+    border-radius: 3rem;
+    transition: all 100ms ease;
+}
+
+
+.navbar-items h2:hover {
+    padding: 1ch;
+    border-radius: 3rem;  
+    cursor: pointer;
+    text-shadow: 0 0 1px #fff,
+                 0 0 2px #368dffdd,
+                 0 0 3px #2382ffdd,
+                 0 0 4px #006effdd;
+    transform: scale(1.05);
+    transition: all 100ms ease;
+}
+
+.aboutme-container {
+    position: absolute;
+    margin-left: 10rem;
+    margin-top: 12rem;
+    
+    display: flex;
+    float: left;
+
+}
+
+.aboutme-img img{
+    border-radius: 30rem;
+    box-shadow: 0 0 5px #fff,
+    0 0 10px #368dffdd,
+    0 0 15px #2382ffdd,
+    0 0 25px #006effdd;
+}
+
+.aboutme-text {
+    color: #2382ffdd;
+    max-width: 46ch;
+    margin-left: 3rem;
+    text-align: center;
+    font-family: Navbar-Font, sans-serif; 
+    margin-top: 1.5rem;
+}
+.aboutme-text p{
+    text-align: start;
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+.aboutme-text h1 {
+    text-shadow: 0 0 3px #787878;
+}
+ 
+.aboutme-text p:nth-child(3) {
+    margin-top: 1.5rem;
+}
+
+.aboutme-text i {
+    color: #2382ffdd;
+    font-size: 2rem;
+    float: left;
+    margin-left: 5px;
+    margin-top: 2rem;
+    text-shadow: 0 0 3px #787878;
+    cursor: pointer;
+}
+
+.skills-text {
+    width: 100%; 
+    position: absolute;
+    margin-top: 27rem;
+}
+
+.skills:before {
+        content:" ";
+        display: block;
+        height: 2px;
+        width: 130px;
+        position: absolute;
+        top: 50%;
+        left: 34%;
+        background: #2382ffdd;     
+}
+
+.skills{
+    position: relative;
+    max-width: 100%;
+    margin: 100px auto;
+    text-align: center;
+  }
+
+.skills:after{
+    content:" ";
+    height: 2px;
+    width: 130px;
+    background: #2382ffdd;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 34%;
+}
+
+.skills span {
+    color:#2382ffdd;  
+    font-family: Navbar-Font, sans-serif; 
+}
+
+
