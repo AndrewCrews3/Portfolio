@@ -6,7 +6,7 @@
 
 * { 
     padding: 0; margin: 0;
-   /* outline: 1px solid red !important; */
+    /* outline: 1px solid red !important; */
 }
 
 body {
@@ -62,9 +62,9 @@ body {
 }
 
 .aboutme-container {
-    position: absolute;
-    margin-left: 10rem;
-    margin-top: 12rem;
+    position: relative;
+    left: 10rem;
+    top: 9rem;
     
     display: flex;
     float: left;
@@ -104,50 +104,46 @@ body {
     color: #2382ffdd;
     font-size: 2rem;
     float: left;
-    margin-left: 5px;
+    left: 5px;
     margin-top: 2rem;
     text-shadow: 0 0 3px #787878;
     cursor: pointer;
 }
 
-.skills-text {
-    width: 100%; 
-    position: absolute;
-    margin-top: 27rem;
-}
-
-.skills:before {
-        content:" ";
-        display: block;
-        height: 2px;
-        width: 130px;
-        position: absolute;
-        top: 50%;
-        left: 34%;
-        background: #2382ffdd;     
-}
-
 .skills{
+    width: 100%; 
     position: relative;
-    max-width: 100%;
-    margin: 100px auto;
-    text-align: center;
-  }
-
-.skills:after{
-    content:" ";
-    height: 2px;
-    width: 130px;
-    background: #2382ffdd;
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 34%;
+    top: 27rem;
+    color:#2382ffdd;
+    font-family: Navbar-Font, sans-serif; 
 }
 
-.skills span {
-    color:#2382ffdd;  
-    font-family: Navbar-Font, sans-serif; 
+
+.skills-logo-container {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    width: 70%;
+    justify-content: space-around;
+    margin: 0 auto;
+    top: 14rem;
+
+}
+
+.skills-logo-container div img {
+    width: 100px;
+    height: 100px;
+}
+
+.skills-logo-container div h3 {
+    text-align: center;
+    display: none;
+    
+}
+
+.skills-logo-container div:hover .h3 {
+    display: flex;
+    color: #006effdd;
 }
 
 
